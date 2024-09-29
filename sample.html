@@ -13,13 +13,12 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #333;
+      background: linear-gradient(to right, #f0f0f5 50%, #333 50%);
       color: white;
     }
 
-    /* Header styling */
     header {
-      background-color: #111;
+      background-color: #222;
       color: gold;
       text-align: center;
       padding: 1rem 0;
@@ -33,20 +32,20 @@
       height: 100vh;
     }
 
-    /* Light Sidebar */
+    /* Sidebar with gradient */
     nav {
-      width: 250px;
-      background-color: #f0f0f5;
+      width: 50%;
+      background-color: transparent;
       color: #333;
       padding: 30px;
       position: relative;
     }
 
     nav img {
-      width: 100%;
+      width: 150px;
       border-radius: 50%;
       margin-bottom: 20px;
-      border: 2px solid #333;
+      border: 2px solid white;
     }
 
     nav ul {
@@ -76,11 +75,11 @@
       width: 100px;
     }
 
-    /* Dark content area */
+    /* Content area with dark theme */
     .content {
-      flex: 1;
+      width: 50%;
       padding: 40px;
-      background-color: #111;
+      background-color: #333;
       color: white;
       overflow-y: scroll;
     }
@@ -100,7 +99,7 @@
     footer {
       text-align: center;
       padding: 10px;
-      background-color: #111;
+      background-color: #222;
       color: gold;
       font-size: 14px;
       position: fixed;
