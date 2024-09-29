@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shivanshi Tiwari's Portfolio</title>
+  <title>Shivanshi Tiwari's GitHub Page</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <style>
-    /* General Reset */
+    /* Reset */
     * {
       margin: 0;
       padding: 0;
@@ -16,75 +16,43 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f0f0f0;
-      color: #333;
-      overflow-x: hidden;
+      text-align: center;
     }
 
-    /* Navigation Bar */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 50px;
-      background-color: #fff;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 100;
-    }
-
-    nav .logo {
+    /* Header */
+    header {
+      background-color: white;
+      color: black;
+      padding: 20px 0;
       font-size: 24px;
       font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    nav ul {
-      display: flex;
-      list-style: none;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-size: 18px;
-    }
-
-    nav ul li a:hover {
-      color: #FF9900;
-    }
-
-    /* Container */
+    /* Main Container */
     .container {
-      margin-top: 100px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 80vh;
       background-color: #f5f5f5;
-      background-image: url('https://i.imgur.com/8BgFfBc.png'); /* Replace with your background graphic */
-      background-repeat: no-repeat;
-      background-position: center;
     }
 
-    /* Profile Picture */
+    /* Profile Section */
     .profile-pic {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      border: 8px solid white;
+      border: 5px solid white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
-      background-color: #FF9900;
     }
 
-    /* Text Styling */
+    /* Introduction */
     h1 {
-      font-size: 48px;
+      font-size: 36px;
+      margin-bottom: 10px;
       color: #333;
     }
 
@@ -93,8 +61,9 @@
     }
 
     p {
-      font-size: 22px;
+      font-size: 18px;
       margin-bottom: 20px;
+      color: #666;
     }
 
     /* About Me Button */
@@ -126,15 +95,15 @@
     }
 
     .social-links a:hover {
-      color: #FF9900;
+      color: #007BFF;
     }
 
     /* Footer */
     footer {
+      margin-top: 50px;
       background-color: #222;
       color: white;
       padding: 10px;
-      text-align: center;
       position: fixed;
       bottom: 0;
       width: 100%;
@@ -143,33 +112,24 @@
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">Shivanshi Tiwari</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <header>
+    Shivanshi Tiwari
+  </header>
 
-  <!-- Main Container -->
-  <div id="home" class="container">
+  <div class="container">
     <img class="profile-pic" src="https://github.com/shivanshitiwari/stiwari/raw/main/WhatsApp%20Image%202024-09-24%20at%2000.10.03.jpeg" alt="Shivanshi Tiwari">
     <h1>Hi There, I'm <span>Shivanshi Tiwari</span></h1>
     <p>I Am Into Business Analytics</p>
     <a href="#about" class="about-button">About Me</a>
 
-    <!-- Social Media Links -->
+    <!-- Social Media Icons -->
     <div class="social-links">
       <a href="https://www.linkedin.com/in/st1405/" target="_blank"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/shivanshitiwari" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="mailto:shivanshi9914@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="mailto:shivanshi9914@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
     &copy; 2024 Shivanshi Tiwari | Powered by GitHub Pages
   </footer>
