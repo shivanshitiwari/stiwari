@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shivanshi Tiwari</title>
+  <title>Shivanshi Tiwari's GitHub Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <style>
+    /* Reset */
     * {
       margin: 0;
       padding: 0;
@@ -13,183 +15,121 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
+      background-color: #f0f0f0;
+      text-align: center;
     }
 
+    /* Header */
     header {
       background-color: white;
-      padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    header h1 {
+      color: black;
+      padding: 20px 0;
       font-size: 24px;
-      color: #333;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    nav ul {
-      list-style-type: none;
+    /* Main Container */
+    .container {
       display: flex;
-    }
-
-    nav ul li {
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #333;
-      font-size: 18px;
-      transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      color: #007BFF;
-    }
-
-    .hero {
-      display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      align-items: center;
-      height: 80vh;
-      text-align: center;
-      background-image: url('https://via.placeholder.com/1200x600');
-      background-position: center;
-      background-size: cover;
+      min-height: 80vh;
+      background-color: #f5f5f5;
+    }
+
+    /* Profile Section */
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    /* Introduction */
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
       color: #333;
     }
 
-    .hero h2 {
-      font-size: 48px;
+    h1 span {
+      color: #FF9900;
     }
 
-    .hero h2 span {
-      color: #ff9800;
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #666;
     }
 
-    .hero p {
-      font-size: 24px;
-      margin: 10px 0;
-    }
-
-    .hero .about-btn {
-      margin-top: 20px;
-      padding: 10px 30px;
+    /* About Me Button */
+    .about-button {
       background-color: #007BFF;
       color: white;
-      border-radius: 5px;
+      padding: 12px 25px;
+      border-radius: 25px;
       text-decoration: none;
+      font-size: 18px;
       transition: background-color 0.3s ease;
     }
 
-    .hero .about-btn:hover {
+    .about-button:hover {
       background-color: #0056b3;
     }
 
-    .social-icons {
+    /* Social Icons */
+    .social-links {
       margin-top: 30px;
     }
 
-    .social-icons a {
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 24px;
+    .social-links a {
       color: #333;
+      font-size: 30px;
+      margin: 0 15px;
+      text-decoration: none;
       transition: color 0.3s ease;
     }
 
-    .social-icons a:hover {
+    .social-links a:hover {
       color: #007BFF;
     }
 
-    .avatar {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin-top: 20px;
-      border: 5px solid white;
-    }
-
-    .content-section {
-      padding: 40px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
+    /* Footer */
     footer {
-      background-color: #333;
+      margin-top: 50px;
+      background-color: #222;
       color: white;
-      text-align: center;
-      padding: 20px;
+      padding: 10px;
       position: fixed;
       bottom: 0;
       width: 100%;
-    }
-
-    footer a {
-      color: #007BFF;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    footer a:hover {
-      color: white;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Shivanshi Tiwari</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    Shivanshi Tiwari
   </header>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <div>
-      <h2>Hi There, I'm <span>Shivanshi Tiwari</span></h2>
-      <p>I Am Into Business Analytics</p>
-      <a href="#about" class="about-btn">About Me</a>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/st1405/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/shivanshitiwari" target="_blank">GitHub</a>
-        <a href="mailto:shivanshi9914@gmail.com">Gmail</a>
-      </div>
-      <img src="https://github.com/shivanshitiwari/stiwari/raw/main/WhatsApp%20Image%202024-09-24%20at%2000.10.03.jpeg" alt="Avatar" class="avatar">
+  <div class="container">
+    <img class="profile-pic" src="https://github.com/shivanshitiwari/stiwari/raw/main/WhatsApp%20Image%202024-09-24%20at%2000.10.03.jpeg" alt="Shivanshi Tiwari">
+    <h1>Hi There, I'm <span>Shivanshi Tiwari</span></h1>
+    <p>I Am Into Business Analytics</p>
+    <a href="#about" class="about-button">About Me</a>
+
+    <!-- Social Media Icons -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/st1405/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/shivanshitiwari" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:shivanshi9914@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
     </div>
   </div>
 
-  <!-- About Section -->
-  <section id="about" class="content-section">
-    <h1>About Me</h1>
-    <p>Hi! I'm Shivanshi Tiwari, a passionate and results-driven professional with 3 years of experience in business analytics. I specialize in transforming data into actionable insights through expertise in data analytics, machine learning, and business strategy. Currently pursuing my Master of Science in Business Analytics at Santa Clara University, focusing on machine learning, econometrics, and prescriptive analytics.</p>
-    <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/st1405/" target="_blank">LinkedIn</a> for more.</p>
-  </section>
-
-  <!-- Resume Section -->
-  <section id="resume" class="content-section">
-    <h1>Resume</h1>
-    <p>View my full resume <a href="https://drive.google.com/file/d/1TBGhJWR8NAZwbGMnLVA_jcsZBqVs2-z-/view?usp=sharing" target="_blank">here</a>.</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="content-section">
-    <h1>Contact</h1>
-    <p>You can reach me at <a href="mailto:shivanshi9914@gmail.com">shivanshi9914@gmail.com</a></p>
-  </section>
-
-  <!-- Footer -->
   <footer>
     &copy; 2024 Shivanshi Tiwari | Powered by GitHub Pages
   </footer>
