@@ -13,10 +13,12 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #f0f0f5 50%, #333 50%);
-      color: white;
+      background-color: #f5f5f5;
+      display: flex;
+      height: 100vh;
     }
 
+    /* Header styling */
     header {
       background-color: #222;
       color: gold;
@@ -24,40 +26,41 @@
       padding: 1rem 0;
       font-size: 26px;
       font-weight: bold;
+      width: 100%;
     }
 
-    /* Container layout */
-    .container {
-      display: flex;
-      height: 100vh;
-    }
-
-    /* Sidebar with gradient */
+    /* Sidebar styling */
     nav {
-      width: 50%;
-      background-color: transparent;
-      color: #333;
+      width: 250px;
+      background-color: #333;
+      color: white;
       padding: 30px;
-      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
     }
 
     nav img {
       width: 150px;
       border-radius: 50%;
       margin-bottom: 20px;
-      border: 2px solid white;
+      border: 3px solid white;
     }
 
     nav ul {
       list-style: none;
+      width: 100%;
+      padding: 0;
     }
 
     nav ul li {
       margin: 20px 0;
+      text-align: center;
     }
 
     nav ul li a {
-      color: #333;
+      color: white;
       text-decoration: none;
       font-size: 18px;
       transition: color 0.3s ease;
@@ -67,25 +70,27 @@
       color: gold;
     }
 
-    /* SCU logo positioning */
+    /* SCU logo */
     .scu-logo {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
       width: 100px;
+      margin-top: 20px;
     }
 
-    /* Content area with dark theme */
+    /* Content area */
     .content {
-      width: 50%;
+      flex: 1;
       padding: 40px;
-      background-color: #333;
-      color: white;
-      overflow-y: scroll;
+      background-color: #fff;
+      transition: background-color 0.3s ease-in-out;
+      overflow-y: auto;
+    }
+
+    .content:hover {
+      background-color: #f0e68c; /* Light yellow when hovered */
     }
 
     .content h1 {
-      color: gold;
+      color: #333;
       font-size: 36px;
       margin-bottom: 20px;
     }
@@ -93,14 +98,15 @@
     .content p {
       font-size: 18px;
       line-height: 1.7;
-      color: #ccc;
+      color: #555;
     }
 
+    /* Footer */
     footer {
       text-align: center;
       padding: 10px;
       background-color: #222;
-      color: gold;
+      color: white;
       font-size: 14px;
       position: fixed;
       bottom: 0;
@@ -114,21 +120,22 @@
     Shivanshi Tiwari
   </header>
 
-  <div class="container">
-    <nav>
-      <img src="https://github.com/shivanshitiwari/stiwari/raw/main/WhatsApp%20Image%202024-09-24%20at%2000.10.03.jpeg" alt="My Image">
-      <ul>
-        <li><a href="https://github.com/shivanshitiwari">Projects</a></li>
-        <li><a href="https://drive.google.com/file/d/1TBGhJWR8NAZwbGMnLVA_jcsZBqVs2-z-/view?usp=sharing">Resume</a></li>
-        <li><a href="mailto:shivanshi9914@gmail.com">Contact</a></li>
-      </ul>
-      <img class="scu-logo" src="https://github.com/shivanshitiwari/stiwari/raw/main/SCUlogo.png" alt="SCU Logo">
-    </nav>
+  <!-- Sidebar -->
+  <nav>
+    <img src="https://github.com/shivanshitiwari/stiwari/raw/main/WhatsApp%20Image%202024-09-24%20at%2000.10.03.jpeg" alt="Profile Image">
+    <ul>
+      <li><a href="https://github.com/shivanshitiwari">Projects</a></li>
+      <li><a href="https://drive.google.com/file/d/1TBGhJWR8NAZwbGMnLVA_jcsZBqVs2-z-/view?usp=sharing">Resume</a></li>
+      <li><a href="mailto:shivanshi9914@gmail.com">Contact</a></li>
+    </ul>
+    <img class="scu-logo" src="https://github.com/shivanshitiwari/stiwari/raw/main/SCUlogo.png" alt="SCU Logo">
+  </nav>
 
-    <div class="content">
-      <h1 id="about">About Me</h1>
-      <p>Hi! I'm Shivanshi Tiwari, a passionate and results-driven professional with 3 years of experience in business analytics. I specialize in transforming data into actionable insights through expertise in data analytics, machine learning, and business strategy. Currently pursuing my Master of Science in Business Analytics at Santa Clara University.</p>
-    </div>
+  <!-- Main Content -->
+  <div class="content">
+    <h1>About Me</h1>
+    <p>Hi! I'm Shivanshi Tiwari, a passionate and results-driven professional with 3 years of experience in business analytics. I specialize in transforming data into actionable insights through expertise in data analytics, machine learning, and business strategy. Currently pursuing my Master of Science in Business Analytics at Santa Clara University, focusing on machine learning, econometrics, and prescriptive analytics.</p>
+    <p>My academic and professional journey includes data science, machine learning, big data, and business analytics projects. I'm passionate about solving complex business challenges and leveraging data-driven solutions to drive growth. Feel free to connect with me on <a href="https://www.linkedin.com/in/st1405/" target="_blank">LinkedIn</a>.</p>
   </div>
 
   <footer>
