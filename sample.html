@@ -5,85 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shivanshi Tiwari's GitHub Page</title>
   <style>
-    body {
+    /* Reset default margins and paddings */
+    * {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f5;
-    }
-
-    /* Header */
-    header {
-      background-color: black;
-      color: gold;
-      text-align: center;
-      padding: 1rem;
-      font-size: 24px;
-    }
-
-    /* Main layout */
-    .container {
-      display: flex;
-    }
-
-    /* Left navigation */
-    nav {
-      background-color: blue;
-      color: white;
-      width: 200px;
-      padding: 20px;
-      height: 100vh; /* Full height */
       box-sizing: border-box;
     }
 
-    nav a {
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    /* Header styling */
+    header {
+      background-color: #222;
+      color: gold;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    /* Container layout */
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Sidebar styling */
+    nav {
+      width: 250px;
+      background-color: #333;
+      color: white;
+      padding: 30px;
+    }
+
+    nav img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 2px solid white;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 20px 0;
+    }
+
+    nav ul li a {
       color: white;
       text-decoration: none;
-      display: block;
-      padding: 10px 0;
       font-size: 18px;
       transition: color 0.3s ease;
     }
 
-    nav a:hover {
-      color: lightgray;
+    nav ul li a:hover {
+      color: gold;
     }
 
     /* Main content area */
     .content {
-      flex-grow: 1;
+      flex: 1;
       padding: 40px;
-      background-color: white;
-      text-align: center;
-    }
-
-    .content img {
-      border-radius: 15px;
-      border: 2px solid #ccc;
-      width: 150px;
-      height: 200px;
+      background-color: #fff;
+      overflow-y: scroll;
     }
 
     .content h1 {
-      color: black;
-      font-size: 32px;
-      margin: 20px 0;
+      color: #333;
+      font-size: 36px;
+      margin-bottom: 20px;
     }
 
     .content p {
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    /* Section styling */
+    .section-title {
+      font-size: 28px;
+      color: #444;
+      margin-top: 40px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      text-align: left;
     }
 
     /* Footer */
     footer {
       text-align: center;
       padding: 10px;
-      background-color: #333;
+      background-color: #222;
       color: white;
+      font-size: 14px;
       position: fixed;
-      width: 100%;
       bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
@@ -94,21 +117,40 @@
   </header>
 
   <div class="container">
-    <!-- Left navigation -->
+    <!-- Sidebar navigation -->
     <nav>
-      <img src="https://github.com/shivanshitiwari/stiwari/raw/main/WhatsApp%20Image%202024-09-24%20at%2000.10.03.jpeg" alt="My Image">
-      <a href="https://www.linkedin.com/in/st1405/" target="_blank">LinkedIn</a>
-    <a href="https://drive.google.com/file/d/1TBGhJWR8NAZwbGMnLVA_jcsZBqVs2-z-/view?usp=sharing" target="_blank">Resume</a>
-    <a href="https://github.com/shivanshitiwari" target="_blank">Projects</a>
-
+      <img src="https://github.com/shivanshitiwari/stiwari/raw/main/path-to-your-image.jpg">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
     <!-- Main content -->
     <div class="content">
-      <h1>Shivanshi Tiwari</h1>
+      <!-- About Me Section -->
+      <h1 id="about">About Me</h1>
       <p>Hi! I'm Shivanshi Tiwari, a passionate and results-driven professional with 3 years of experience in business analytics. I specialize in transforming data into actionable insights through expertise in data analytics, machine learning, and business strategy. Currently pursuing my Master of Science in Business Analytics at Santa Clara University, focusing on machine learning, econometrics, and prescriptive analytics.</p>
+      <p>My academic and professional journey includes data science, machine learning, big data, and business analytics projects. I'm passionate about solving complex business challenges and leveraging data-driven solutions to drive growth. Feel free to connect with me on <a href="https://www.linkedin.com/in/st1405/" target="_blank">LinkedIn</a>.</p>
 
-      <p>My academic and professional journey includes data science, machine learning, big data, and business analytics projects. I'm passionate about solving complex business challenges and leveraging data-driven solutions to drive growth. Feel free to email me at shivanshi9914@gmail.com </p>
+      <!-- Projects Section -->
+      <h2 class="section-title" id="projects">Projects</h2>
+      <p>Here are some of the key projects I've worked on:</p>
+      <ul>
+        <li>Project 1: <a href="https://github.com/shivanshitiwari/project1" target="_blank">GitHub Repository</a></li>
+        <li>Project 2: <a href="https://github.com/shivanshitiwari/project2" target="_blank">GitHub Repository</a></li>
+        <li>Project 3: <a href="https://github.com/shivanshitiwari/project3" target="_blank">GitHub Repository</a></li>
+      </ul>
+
+      <!-- Resume Section -->
+      <h2 class="section-title" id="resume">Resume</h2>
+      <p>You can view my full resume <a href="https://drive.google.com/file/d/1TBGhJWR8NAZwbGMnLVA_jcsZBqVs2-z-/view?usp=sharing" target="_blank">here</a>.</p>
+
+      <!-- Contact Section -->
+      <h2 class="section-title" id="contact">Contact</h2>
+      <p>If you'd like to get in touch, feel free to reach out via email at <a href="mailto:shivanshi9914@gmail.com">shivanshi9914@gmail.com</a>.</p>
     </div>
   </div>
 
