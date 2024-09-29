@@ -19,17 +19,16 @@
       background-size: cover;
       background-position: center;
       text-align: center;
-      color: white;  /* Changed font color to white for better readability */
+      color: black;  /* Font color set to black for readability */
     }
 
     /* Header */
     header {
-      background-color: rgba(0, 0, 0, 0.6); /* Transparent background */
-      color: white;
+      background-color: transparent; /* Remove the black strip */
+      color: black; /* Make the text black */
       padding: 20px 0;
       font-size: 24px;
       font-weight: bold;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
       position: relative;
     }
 
@@ -42,13 +41,13 @@
 
     .nav a {
       margin-left: 20px;
-      color: white;
+      color: black; /* Set to black */
       text-decoration: none;
       font-size: 18px;
     }
 
     .nav a:hover {
-      color: #FF9900;
+      color: #007BFF;
     }
 
     /* Main Container */
@@ -58,6 +57,7 @@
       align-items: center;
       justify-content: center;
       min-height: 80vh;
+      padding-top: 50px;
     }
 
     /* Profile Section */
@@ -68,13 +68,15 @@
       border: 5px solid white;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
       margin-bottom: 20px;
+      position: relative;
+      right: -20px; /* Shifted slightly to the right */
     }
 
     /* Introduction */
     h1 {
       font-size: 36px;
       margin-bottom: 10px;
-      color: white;
+      color: black;  /* Set text to black */
     }
 
     h1 span {
@@ -84,7 +86,7 @@
     p {
       font-size: 18px;
       margin-bottom: 20px;
-      color: white;
+      color: black; /* Set text to black */
     }
 
     /* About Me Button */
@@ -108,7 +110,7 @@
     }
 
     .social-links a {
-      color: white;
+      color: black; /* Set to black */
       font-size: 30px;
       margin: 0 15px;
       text-decoration: none;
@@ -116,7 +118,7 @@
     }
 
     .social-links a:hover {
-      color: #FF9900;
+      color: #007BFF;
     }
 
     /* About Section */
