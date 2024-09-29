@@ -1,40 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        img {
-            width: 150px;    /* Approximate passport size width */
-            height: 200px;   /* Approximate passport size height */
-            border-radius: 15px; /* Rounded corners */
-            border: 2px solid #ccc; /* Optional: Border around the image */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Drop shadow for a polished look */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivanshi Tiwari's GitHub Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f5;
+    }
+
+    /* Header */
+    header {
+      background-color: black;
+      color: gold;
+      text-align: center;
+      padding: 1rem;
+      font-size: 24px;
+    }
+
+    /* Main layout */
+    .container {
+      display: flex;
+    }
+
+    /* Left navigation */
+    nav {
+      background-color: blue;
+      color: white;
+      width: 200px;
+      padding: 20px;
+      height: 100vh; /* Full height */
+      box-sizing: border-box;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px 0;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: lightgray;
+    }
+
+    /* Main content area */
+    .content {
+      flex-grow: 1;
+      padding: 40px;
+      background-color: white;
+      text-align: center;
+    }
+
+    .content img {
+      border-radius: 15px;
+      border: 2px solid #ccc;
+      width: 150px;
+      height: 200px;
+    }
+
+    .content h1 {
+      color: black;
+      font-size: 32px;
+      margin: 20px 0;
+    }
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
 </head>
 <body>
-    <h1>Shivanshi Tiwari</h1>
-    
-    <!-- Image with passport size and rounded edges -->
-    <img src="https://github.com/shivanshitiwari/stiwari/raw/main/WhatsApp%20Image%202024-09-24%20at%2000.10.03.jpeg" alt="My Image">
-    
-    <a href="https://www.linkedin.com/in/st1405/" target="_blank">LinkedIn</a>
-    <a href="https://drive.google.com/file/d/1TBGhJWR8NAZwbGMnLVA_jcsZBqVs2-z-/view?usp=sharing" target="_blank">Resume</a>
-    <a href="https://github.com/shivanshitiwari" target="_blank">Projects</a>
 
-    <h2>About Me</h2>
-    <p>Hi! I'm Shivanshi Tiwari, a passionate and results-driven professional with 3 years of experience in business analytics.
-    I specialize in transforming data into actionable insights through expertise in data analytics, machine learning, and business strategy.
-    Currently pursuing my Master of Science in Business Analytics at Santa Clara University, I’m focusing on advanced machine learning, econometrics, and prescriptive analytics.
-    My academic and professional journey has given me hands-on experience in tackling complex data science projects, working with big data, and driving business growth through data-driven solutions.
-    I'm always eager to leverage cutting-edge analytics to solve real-world business challenges and make impactful contributions to the organizations I work with.</p>
+  <header>
+    Shivanshi Tiwari
+  </header>
+
+  <div class="container">
+    <!-- Left navigation -->
+    <nav>
+      <img src="https://github.com/shivanshitiwari/stiwari/raw/main/path-to-your-image.jpg" alt="Shivanshi's Photo">
+      <a href="#">Home</a>
+      <a href="#">Books and Research Articles</a>
+      <a href="#">Citations</a>
+      <a href="#">Vita</a>
+      <a href="#">Bio</a>
+      <a href="#">Awards</a>
+      <a href="#">Editorships</a>
+      <a href="#">My Blog</a>
+      <a href="#">Finance Links</a>
+      <a href="#">Math and Computer Science Links</a>
+      <a href="#">Cartoons & Creative Writing</a>
+    </nav>
+
+    <!-- Main content -->
+    <div class="content">
+      <h1>Shivanshi Tiwari</h1>
+      <p>Hi! I'm Shivanshi Tiwari, a passionate and results-driven professional with 3 years of experience in business analytics. I specialize in transforming data into actionable insights through expertise in data analytics, machine learning, and business strategy. Currently pursuing my Master of Science in Business Analytics at Santa Clara University, focusing on machine learning, econometrics, and prescriptive analytics.</p>
+
+      <p>My academic and professional journey includes data science, machine learning, big data, and business analytics projects. I'm passionate about solving complex business challenges and leveraging data-driven solutions to drive growth. Feel free to connect with me on <a href="https://www.linkedin.com/in/st1405/" target="_blank">LinkedIn</a>.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Shivanshi Tiwari | Powered by GitHub Pages
+  </footer>
+
 </body>
 </html>
