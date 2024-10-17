@@ -177,7 +177,8 @@
   </header>
 
   <div class="container">
-    <img class="profile-pic" src="[https://github.com/shivanshitiwari/stiwari/raw/main/WhatsApp%20Image%202024-09-24%20at%2000.10.03.jpeg](https://github.com/shivanshitiwari/stiwari/blob/main/WhatsApp%20Image%202024-09-24%20at%2000.10.03.jpeg)" alt="Shivanshi Tiwari">
+    <img class="profile-pic" src="https://github.com/shivanshitiwari/stiwari/blob/main/WhatsApp%20Image%202024-09-24%20at%2000.10.03.jpeg![image](https://github.com/user-attachments/assets/77090499-ce58-46e9-82a8-17639783faf5)
+" alt="Shivanshi Tiwari">
     <h1>Hi There, I'm <span>Shivanshi Tiwari</span></h1>
     <p> Business Analyst</p>
     <a href="#about" class="about-button">About Me</a>
