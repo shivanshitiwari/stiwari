@@ -199,9 +199,50 @@
     <p>My academic and professional journey includes data science, machine learning, big data, and business analytics projects. I'm passionate about solving complex business challenges and leveraging data-driven solutions to drive growth. Feel free to connect with me on LinkedIn or view my projects on GitHub.</p>
   </section>
 
+  <!-- Contact Me Section -->
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+      <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+      <input type="email" id="email" name="email" placeholder="E-mail" required>
+      <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  
   <footer>
     &copy; 2024 Shivanshi Tiwari | Powered by GitHub Pages
   </footer>
+<script>
+    // Initialize EmailJS with your user ID
+    (function() {
+      emailjs.init('YOUR_EMAILJS_USER_ID'); // Replace with your EmailJS user ID
+    })();
 
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const firstName = document.getElementById('first-name').value;
+      const lastName = document.getElementById('last-name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      const templateParams = {
+        from_name: `${firstName} ${lastName}`,
+        from_email: email,
+        message: message,
+        subject: `Coffee Chat with ${firstName}`
+      };
+
+      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(function(response) {
+          alert('Message sent successfully!');
+        }, function(error) {
+          alert('Failed to send message. Please try again.');
+        });
+    });
+  </script>
+  
 </body>
 </html>
