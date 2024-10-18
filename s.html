@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shivanshi Tiwari's GitHub Page</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.10.0/dist/email.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <style>
     /* Reset */
     * {
@@ -19,16 +19,16 @@
       background-image: url('https://raw.githubusercontent.com/shivanshitiwari/stiwari/main/final2.jpg');
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat; /* Ensure the image doesn't repeat */
-      background-attachment: fixed; /* Makes the background stay fixed when scrolling */
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
       text-align: center;
-      color: black;  /* Font color set to black for readability */
+      color: black; 
     }
 
     /* Header */
     header {
-      background-color: transparent; /* Remove the black strip */
-      color: black; /* Make the text black */
+      background-color: transparent; 
+      color: black; 
       padding: 20px 0;
       font-size: 24px;
       font-weight: bold;
@@ -44,7 +44,7 @@
 
     .nav a {
       margin-left: 20px;
-      color: black; /* Set to black */
+      color: black; 
       text-decoration: none;
       font-size: 18px;
     }
@@ -57,30 +57,28 @@
     .container {
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center align content horizontally */
+      align-items: center;
       justify-content: center;
       min-height: 80vh;
       background-color: transparent;
-      text-align: center; /* Set text alignment to center */
+      text-align: center;
     }
 
     /* Profile Section */
     .profile-pic {
-      width: 250px;  /* Increased size */
+      width: 250px;
       height: 250px;
       border-radius: 50%;
       border: 5px solid white;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
       margin-bottom: 20px;
-      position: relative;
-      right: -20px; /* Shifted slightly to the right */
     }
 
     /* Introduction */
     h1 {
       font-size: 36px;
       margin-bottom: 10px;
-      color: black;  /* Set text to black */
+      color: black;
     }
 
     h1 span {
@@ -90,10 +88,9 @@
     p {
       font-size: 18px;
       margin-bottom: 20px;
-      color: black; /* Set text to black */
+      color: black;
     }
 
-    /* About Me Button */
     .about-button {
       background-color: #007BFF;
       color: white;
@@ -108,13 +105,12 @@
       background-color: #0056b3;
     }
 
-    /* Social Icons */
     .social-links {
       margin-top: 30px;
     }
 
     .social-links a {
-      color: black; /* Set to black */
+      color: black;
       font-size: 30px;
       margin: 0 15px;
       text-decoration: none;
@@ -129,7 +125,7 @@
     .about-section {
       padding: 50px;
       text-align: left;
-      background-color: rgba(0, 0, 0, 0.7); /* Transparent background for better readability */
+      background-color: rgba(0, 0, 0, 0.7);
       color: white;
     }
 
@@ -179,6 +175,10 @@
       width: 100%;
     }
 
+    .contact-container input::placeholder, .contact-container textarea::placeholder {
+      color: #999;
+    }
+
     .contact-container button {
       background-color: #3E6AE1;
       color: white;
@@ -199,9 +199,9 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      width: 100px; /* Smaller size */
+      width: 100px;
       height: auto;
-      opacity: 0.8; /* Slight transparency */
+      opacity: 0.8;
     }
 
     /* Footer */
@@ -256,44 +256,4 @@
     <form id="contact-form">
       <input type="text" id="first-name" name="first-name" placeholder="First name" required>
       <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
-      <input type="email" id="email" name="email" placeholder="E-mail" required>
-      <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </div>
-
-  <footer>
-    &copy; 2024 Shivanshi Tiwari | Powered by GitHub Pages
-  </footer>
-
-  <script>
-    // Initialize EmailJS with your user ID
-    (function() {
-      emailjs.init('YOUR_EMAILJS_USER_ID'); // Replace with your EmailJS user ID
-    })();
-
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      const firstName = document.getElementById('first-name').value;
-      const lastName = document.getElementById('last-name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-
-      const templateParams = {
-        from_name: `${firstName} ${lastName}`,
-        from_email: email,
-        message: message,
-        subject: `Coffee Chat with ${firstName}`
-      };
-
-      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
-        .then(function(response) {
-          alert('Message sent successfully!');
-        }, function(error) {
-          alert('Failed to send message. Please try again.');
-        });
-    });
-  </script>
-</body>
-</html>
+      <input type="email" id="email" name="email" placeholder="E-mail" required
